@@ -76,33 +76,45 @@
     </main>
 
     <section class="section">
+        
+        <!-- <div class="counter" data-to="26" data-stop="0">0</div>
+        <div class="counter" data-to="1000" data-stop="0">0</div>
+        <div class="counter" data-to="2500000" data-stop="0">0</div> -->
+    
+        <script src="script.js"></script>
+        
         <div class="statistics_wrapper">
             <ul class="statistics_list">
                 <li class="statistics_item">
-                    <h1 class="statistics_header">700+</h1>
+                    <h1 id="count1" class="counter" data-to="50" data-stop="0">0</h1>
                     <p class="statistics_text">интернациональных компаний уже работают с нами</p>
                 </li>
                 <li class="statistics_item">
-                    <h1 class="statistics_header">50</h1>
+                    <h1 id="count2" class="counter" data-to="120" data-stop="0">0</h1>>
                     <p class="statistics_text">филиалов во всех крупных городах России</p>
                 </li>
                 <li class="statistics_item">
-                    <h1 class="statistics_header">90+</h1>
+                    <h1 id="count3" class="counter" data-to="700" data-stop="0">0</h1>
                     <p class="statistics_text">фур ежедневно</p>
                 </li>
             </ul>
             <ul class="statistics_list">
                 <li class="statistics_item">
-                    <h1 class="statistics_header">16 000</h1>
+                    <h1 id="count4" class="counter" data-to="15000" data-stop="0">0</h1>
                     <p class="statistics_text">рейсов совершили</p>
                 </li>
                 <li class="statistics_item">
-                    <h1 class="statistics_header">35 000</h1>
+                    <h1 id="count5" class="counter" data-to="36000" data-stop="0">0</h1>
                     <p class="statistics_text">грузов доставили</p>
                 </li>
             </ul>
         </div>
+        
     </section>
+
+    <!-- Подключаем ваш скрипт -->
+    <script src="./script.js"></script>
+    
 
     <section class="federal">
         <div class="federal_coverage">
@@ -135,37 +147,31 @@
         </div>
     </section>
 
-    <section class="trust">
-        <div class="trust_us">
-            <h2 class="trust_us_header">Нам доверили свои грузы</h2>
-        </div>
-        <div class="agents"></div>
-        <div class="dots_all">
-            <div class="dot_agents"></div>
-            <div class="dot_agents"></div>
-            <div class="dot_agents"></div>
-            <div class="dot_agents"></div>
-        </div>
-    </section>
+<!-- Подключаем библиотеку Swiper -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <div class="slider_agents middle">
-        <div class="slides">
-            <input type="radio" name="r" id="r1" checked>
-            <input type="radio" name="r" id="r2">
-            <input type="radio" name="r" id="r3">
-            <input type="radio" name="r" id="r4">
-
-            <div class="slide s1">
-                <img src="./img/agent1.png" alt="Изображение" class="img">
-            </div>
-            <div class="slide">
-                <img src="./img/agent2.png" alt="Изображение" class="img">
-            </div>
-            <div class="slide">
-                <img src="./img/agent3.png" alt="Изображение" class="img">
-            </div>
-
+<div class="swiper-container slider_agents middle">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="./img/agent1.png" alt="Изображение" class="img">
         </div>
+        <div class="swiper-slide">
+            <img src="./img/agent2.png" alt="Изображение" class="img">
+        </div>
+        <div class="swiper-slide">
+            <img src="./img/agent3.png" alt="Изображение" class="img">
+        </div>
+    </div>
+    <!-- Добавляем кружки для пагинации -->
+    <div class="swiper-pagination"></div>
+
+</div>
+
+
+
+
+    
         <div class="navigation">
             <label for="r1" class="bar"></label>
             <label for="r2" class="bar"></label>

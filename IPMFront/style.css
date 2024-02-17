@@ -674,3 +674,75 @@ input[name="r"] {
     margin-bottom: 20px;
     
 }
+
+/* Стили для слайдера */
+.swiper-container {
+    width: 100%;
+    height: 400px; /* Высота  */
+}
+
+.swiper-slide img {
+    
+    width: 100%;
+    height: auto;
+}
+
+.swiper-pagination {
+    /* color: #f10a0a; */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+
+/* Свои стили для слайдера после основных стилей, для приоритета стиля суки..*/
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: red !important; /* Изменить фон кнопок на красный */
+    color: white !important; /* Изменить цвет текста кнопок на белый */
+    width: 40px; /* Увеличить ширину кнопок */
+    height: 40px; /* Увеличить высоту кнопок */
+    line-height: 40px; /* Центрировать текст кнопок */
+    font-size: 18px; /* Увеличить размер текста кнопок */
+
+}
+
+/* При необходимости также можно добавить стили для активных кружков пагинации */
+.swiper-pagination-bullet-active {
+    background-color: red !important; /* Изменить цвет активного кружка на красный */
+    width: 10px; /* Увеличить размер активного кружка */
+    height: 10px; /* Увеличить размер активного кружка */
+}
+
+
+.counter {
+    font-size: 55px;
+    font-weight: 700;
+    color: #B80006;
+    margin-bottom: 10px;
+    width: 200px;
+    text-align: center;
+}
